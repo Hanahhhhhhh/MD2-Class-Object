@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var Book_1 = require("./Book");
+var BookManager_1 = require("./BookManager");
+var book1 = new Book_1.Book('B001', 'Lap trinh Java');
+var book2 = new Book_1.Book('B002', 'Lap trinh PHP');
+var book3 = new Book_1.Book('B003', 'Lap trinh TypeScript');
+var bookManager = new BookManager_1.BookManager();
+bookManager.add(book1);
+bookManager.add(book2);
+bookManager.add(book3);
+bookManager.update('B003', 'lap trinh MySQL');
+console.log(bookManager.getList());
